@@ -1,4 +1,13 @@
 <h2>Welcome to Pizza Shop!</h2>
-<button class="btn btn-primary btn-lg" onclick="something()">Clic me!</button>
+<h2>Список продуктов</h2>
+<% @products.each do |product| %>
+  <p>
+  	<a href="/index/<%= product.id %>"><%= product.title %></a>
+  	<%= product.description %>
+  	<%= product.price %>
+  	<%= product.size %>
+  	
+  </p> 
+<% end %>
 
 

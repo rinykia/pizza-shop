@@ -1,0 +1,26 @@
+<h2>Заказ</h2>
+<p>На этой странице вы можете сделать заказ</p>
+<form action="/new" method="POST" role="form">
+  
+  <div class="form-group">
+    <label>Название</label>
+    <input name="product[title]" type="string" class="form-control" placeholder="Название" value="<%= @p.title %>">
+  </div>
+
+  <div class="form-group">
+    <label>Описание</label>
+    <input name="product[description]" type="text" class="form-control" placeholder="Описание" value="<%= @p.description %>">
+  </div>
+
+<div class="form-group">
+    <label>Цена</label>
+    <input name="product[price]" type="decimal" class="form-control" placeholder="цена" value="<%= @p.price %>">
+</div>
+
+<div class="form-group">
+    <label>Размер</label>
+    <input name="product[size]" type="decimal" class="form-control" placeholder="размер" value="<%= @p.size %>">
+</div>
+
+  <button type="submit" class="btn btn-primary">Создать</button>
+</form>
