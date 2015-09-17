@@ -2,9 +2,19 @@
 
   <div class="row">
     <% @products.each do |p| %>
-      <div class="col-md-3"><%= p.title %></div>
+      <div class="col-md-3">
+      	<div><%= p.title %></div>
+      	<div><img src="<%= p.path_to_image %>" style="width: 200px; height: 150px;"/></div>
+      	<div><%= p.price %></div>
+        <%= p.size %>
+        <%= p.description %>
+      </div>
+
     <% end %>
   </div>
+<br/>
+<br/>
+<br/>
 
 
 <button class="btn btn-primary btn-lg" onclick="something()">Click me!</button>
