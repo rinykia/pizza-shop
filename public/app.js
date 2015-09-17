@@ -6,7 +6,7 @@ function something()
   alert(x);
 }
 
-function add_to_cart()
+function add_to_cart(id)
 {
-  alert('Hello!');
+  alert('You added with id: ' + id);
 }
