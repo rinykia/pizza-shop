@@ -10,7 +10,7 @@ end
 
 
 get '/' do
-  @products = Product.all.order('created_at DESC')
+  @products = Product.all
   erb :index
 
 end
