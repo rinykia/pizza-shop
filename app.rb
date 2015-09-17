@@ -20,7 +20,6 @@ get '/about' do
 end
 
 post '/new' do
-
   @p = Product.new params[:product]
   if @p.save
     erb "Product successfully created."
