@@ -19,6 +19,10 @@ get '/about' do
   erb :about
 end
 
+post '/cart' do 
+  erb "Hello!"
+end
+
 post '/new' do
   @p = Product.new params[:product]
   if @p.save
@@ -33,3 +37,5 @@ get '/new' do
   @p = Product.new
   erb :new
 end
+
+
