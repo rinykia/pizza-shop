@@ -1,3 +1,5 @@
+
+
 function something()
 {
   var x = window.localStorage.getItem('bbb');
@@ -54,3 +56,7 @@ function cart_get_orders()
   }
   return orders;
 }
+//update window save
+$(function(){
+  update_orders_input();
+});
