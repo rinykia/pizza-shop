@@ -64,12 +64,16 @@ function cart_get_orders()
   return orders;
 }
 //update window save
-$(function(){
-  update_orders_input();
-});
+//$(function(){
+  //update_orders_input();
+//});
 
 function cancel_order()
 {
-  alert('hhh');
+  window.localStorage.clear();
+
+  update_orders_input();
+  update_orders_button();
+
   return false;
 }
