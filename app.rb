@@ -21,6 +21,11 @@ get '/about' do
   erb :about
 end
 
+get '/admin' do
+  @orders = Order.all.order('created_at DESC')
+  erb :admin
+end
+
 post '/place_order' do 
   @order = Order.create params[:order]
   erb :order_placed
