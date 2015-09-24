@@ -67,3 +67,9 @@ function cart_get_orders()
 $(function(){
   update_orders_input();
 });
+
+function cancel_order()
+{
+  alert('hhh');
+  return false;
+}
